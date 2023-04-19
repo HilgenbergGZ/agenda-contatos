@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Contatos</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header><h1>Lista de Contatos</h1></header>
+        <div>
+            <form id="cadastroContato">
+                <input required id="inputnomeContato" type="text"  placeholder="Digite o nome">
+                <input required id="inputContato" type="number" placeholder="Digite o DDD e n°" onblur="removerZerosEsquerda(this)">
+                <button type="submit">Cadastrar</button>
+                <img src="./img/Group 1.png" alt="">
+            </form>
+        </div>
+        <table>
+            <tbody>
+            </tbody>
+            <div style="clear: both;"></div>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
